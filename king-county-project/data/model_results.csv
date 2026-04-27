@@ -1,0 +1,4 @@
+Model,R²,MAE ($),RMSE ($)
+Multiple Linear Regression (MLR),0.6957,128162,214478
+Random Forest (tuned),0.8522,75318,149464
+"Neural Network (MLP, fixed)",0.8821,75436,133495

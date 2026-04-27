@@ -1,0 +1,5 @@
+Model,R2,MAE,RMSE,Notes
+OLS/MLR,0.6957,128162,214478,Global linear
+GWR (mgwr),0.9144,N/A,N/A,Spatially-varying; adaptive bisquare bw
+Random Forest,0.8493,75558,150924,"n=100, max_features=0.4"
+MLP (fixed),0.7544,113824,192682,128-64 ReLU+StandardScaler
