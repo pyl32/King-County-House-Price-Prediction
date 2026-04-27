@@ -167,7 +167,7 @@ conda install -c conda-forge geopandas scikit-learn seaborn jupyterlab openpyxl
 jupyter lab King_County_House_Price_Prediction.ipynb
 ```
 
-**Note:** The notebook uses `data/Project2_dataset.gdb` — copy the original GDB from the project folder or adjust the path. The CSV export (`data/king_county_house_sales.csv`) can be used as a flat-file alternative.
+**Note:** The notebook uses `data/Project2_dataset.gdb` . The CSV export (`data/king_county_house_sales.csv`) can be used as a flat-file alternative.
 
 ---
 
