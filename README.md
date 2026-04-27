@@ -149,9 +149,9 @@ mlp.fit(X_train_sc, y_train)  # use SCALED features
 
 **sqft_living and grade lead structural predictors:** Consistent with hedonic pricing theory and the correlation analysis (r=0.70 and r=0.67 respectively).
 
-**Feature scaling is non-negotiable for MLP:** The original project's omission of StandardScaler produced R²≈0.42 — a gradient optimization failure, not a model limitation.
+**Feature scaling is non-negotiable for MLP:** The original StandardScaler produced R²≈0.42 — a gradient optimization failure, not a model limitation.
 
-**Spatial nonstationarity is real:** GWR in ArcGIS Pro (original Project 2) achieved R²=0.814 by allowing coefficients to vary spatially, outperforming global MLR (R²=0.696) and confirming that one-size-fits-all regression misses local price drivers.
+**Spatial nonstationarity is real:** GWR in ArcGIS Pro achieved R²=0.814 by allowing coefficients to vary spatially, outperforming global MLR (R²=0.696) and confirming that one-size-fits-all regression misses local price drivers.
 
 ---
 
