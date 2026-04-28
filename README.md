@@ -5,7 +5,6 @@
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-RandomForest%20%7C%20MLP%20%7C%20MLR-orange)
 ![GeoPandas](https://img.shields.io/badge/GeoPandas-Spatial%20I/O-green)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)
-![Course](https://img.shields.io/badge/Course-SSCI%20575%20Spatial%20Data%20Science-purple)
 
 ---
 
