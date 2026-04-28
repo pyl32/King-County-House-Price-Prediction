@@ -120,19 +120,19 @@ rf = RandomForestRegressor(
 )
 ```
 
-### Model 3: MLP Neural Network (Fixed)
+### Model 3: MLP Neural Network
 ```python
-# STEP 1: Scale features (CRITICAL -- was missing in original)
+# STEP 1: Scale features 
 scaler = StandardScaler()
 X_train_sc = scaler.fit_transform(X_train)
 X_test_sc  = scaler.transform(X_test)
 
 # STEP 2: Train with corrected parameters
 mlp = MLPRegressor(
-    hidden_layer_sizes=(256, 128, 64),  # deeper than original (100,)
+    hidden_layer_sizes=(256, 128, 64),
     activation='relu',
     learning_rate_init=0.001,
-    max_iter=600,          # was 200 -- caused ConvergenceWarning
+    max_iter=600,          
     early_stopping=True,   # prevents overfitting
     validation_fraction=0.1,
     random_state=42
@@ -148,7 +148,7 @@ mlp.fit(X_train_sc, y_train)  # use SCALED features
 
 **sqft_living and grade lead structural predictors:** Consistent with hedonic pricing theory and the correlation analysis (r=0.70 and r=0.67 respectively).
 
-**Feature scaling is non-negotiable for MLP:** The original StandardScaler produced R²≈0.42 — a gradient optimization failure, not a model limitation.
+**Feature scaling is non-negotiable for MLP:** Missing this will result a gradient optimization failure, not a model limitation.
 
 **Spatial nonstationarity is real:** GWR in ArcGIS Pro achieved R²=0.814 by allowing coefficients to vary spatially, outperforming global MLR (R²=0.696) and confirming that one-size-fits-all regression misses local price drivers.
 
